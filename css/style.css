@@ -1,0 +1,65 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand{
+    width: 220px;
+}
+
+#hero{
+    height: 80vh;
+}
+
+.title-content{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title-body{
+    padding-top: 0.5em;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.tagar{
+    padding-top: 1em;
+    color: #EC871B;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-primary{
+    background-color: #292D5A;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding:10px 20px;
+    border-radius: 100px;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #EC871B;
+}
+
+.hero-image img{
+    width: 490px;
+    height: 340px;
+    border-top-left-radius: 59px;
+    border-bottom-right-radius: 59px;
+}
+
+#video-mars{
+    width: 490px;
+    height: 315px;
+    border-radius: 15px;
+}
+
+#footer{
+    background-color: #292D5A;
+    padding: 1em;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
