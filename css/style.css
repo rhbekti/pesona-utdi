@@ -18,6 +18,12 @@ body{
     line-height: 1.3em;
 }
 
+@media (max-width: 768px) {
+    .content{
+        text-align: center;
+    } 
+}
+
 .tagar{
     padding-top: 1em;
     color: #EC871B;
