@@ -46,6 +46,10 @@ body{
     border-bottom-right-radius: 59px;
 }
 
+#mars{
+    background-color: #292D5A;
+}
+
 #video-mars{
     width: 490px;
     height: 315px;
