@@ -26,6 +26,16 @@ body{
     } 
 }
 
+.text-orange{
+    color: #EC871B;
+    font-weight: 500;
+}
+
+.text-thin{
+    font-weight: 400;
+    color: #fff;
+}
+
 .tagar{
     padding-top: 1em;
     color: #EC871B;
@@ -62,6 +72,24 @@ body{
     width: 490px;
     height: 315px;
     border-radius: 15px;
+}
+
+.jurusan{
+    margin-top: 1.3em;
+    border: none;
+}
+
+.jurusan img{
+    width: 200px;
+    height: 200px;
+}
+
+#kontak{
+    background-color: #292D5A;
+}
+
+#kontak img{
+    width: 200px;
 }
 
 #footer{
