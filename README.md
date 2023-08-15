@@ -1,1 +1,7 @@
-# pesona-22
+Pesona UTDI
+==
+Website Pengenalan Kampus
+--
+*dibangun bersama :*
+- Rahman P
+- Admisi UTDI
