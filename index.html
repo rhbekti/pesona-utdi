@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -102,7 +102,7 @@
     />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/dist/style.css" />
     <style>
       .hero {
         background: url("/images/hero-pesona.png");
@@ -117,57 +117,157 @@
   </head>
   <body class="font-sans antialiase">
     <header>
-      <nav class="flex justify-between py-4 px-8 bg-slate-900">
-        <a href="">
+      <!-- desktop navigation -->
+      <nav
+        class="flex sticky top-0 left-0 z-50 justify-center xl:justify-between py-4 px-8 bg-slate-900"
+      >
+        <a href="https://www.pesona.utdi.ac.id">
           <img
-            src="/images/logo-pesona.png"
+            src="images/logo-pesona.png"
             alt="Logo Pesona"
             height="80"
             width="140"
           />
         </a>
-        <a href="" class="md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            class="bi bi-list text-white"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </a>
         <ul
-          class="w-full hidden md:w-1/2 md:flex justify-evenly text-white my-auto"
+          class="w-full hidden md:w-1/2 md:flex justify-evenly text-white my-auto font-semibold"
         >
           <li>
-            <a href="" class="hover:text-yellow-500">About Us</a>
+            <a href="#about" class="hover:text-yellow-500">About Us</a>
           </li>
           <li>
-            <a href="" class="hover:text-yellow-500">Materi</a>
+            <a href="#materi" class="hover:text-yellow-500">Materi</a>
           </li>
           <li>
-            <a href="" class="hover:text-yellow-500">Atribut</a>
+            <a href="#atribut" class="hover:text-yellow-500">Atribut</a>
           </li>
           <li>
-            <a href="" class="hover:text-yellow-500">Mars</a>
+            <a href="#mars" class="hover:text-yellow-500">Mars</a>
           </li>
           <li>
-            <a href="" class="hover:text-yellow-500">Download</a>
+            <a href="#download" class="hover:text-yellow-500">Download</a>
           </li>
         </ul>
       </nav>
+      <div class="flex bg-slate-900 text-white px-8">
+        <h5 class="font-semibold">Informasi:</h5>
+        <marquee class="text-slate-300">
+          Catatan Khusus: 1. Mengikuti seluruh peraturan Universitas. 2. Setiap
+          peserta wajib menjaga kehormatan diri dan institusi. 3. Bagi yang
+          memiliki masalah kesehatan (disertai surat dokter) wajib lapor di
+          bagian sekretariat Pesona (08122790274 Edi Iskandar. S.T., M.T.). 4.
+          Dilarang membawa dan memakai perhiasan secara berlebihan. 5. Dilarang
+          Bermakeup berlebihan. 6. Dilarang membawa senjata tajam dan
+          obat-obatan terlarang. 7. Dilarang merokok, vapor (rokok elektrik),
+          minuman beralkohol, narkoba, senjata tajam, senjata api, dan hal lain
+          yang dapat mengganggu jalannya acara. 8. Bagi mahasiswa alih
+          jalur,pindahan, pemutihan baik reguler maupun kelas karywan KRS di
+          bagian akademik dengan membawa hasil anvulen tanggal 4 September 2023
+          pukul 09.45 9. Bagi mahasiswa kelas karyawan hanya menikuti kegiatan
+          pesona hari pertama pembukaan sampai dengan KRS yang di jadwalkan pada
+          poin 8.
+        </marquee>
+      </div>
+      <!-- end desktop navigation -->
+      <!-- mobile navigation -->
+      <nav
+        class="fixed xl:hidden bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600"
+      >
+        <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+          <a
+            href="#"
+            class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+          >
+            <svg
+              class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+              />
+            </svg>
+            <span
+              class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              >Beranda</span
+            >
+          </a>
+          <a
+            href="#materi"
+            class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              aria-hidden="true"
+              class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+              />
+            </svg>
+            <span
+              class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              >Materi</span
+            >
+          </a>
+          <a
+            href="#atribut"
+            class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+          >
+            <svg
+              class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
+              />
+            </svg>
+            <span
+              class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              >Atribut</span
+            >
+          </a>
+          <a
+            href="#"
+            class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+          >
+            <svg
+              class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"
+              />
+            </svg>
+            <span
+              class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              >Kontak</span
+            >
+          </a>
+        </div>
+      </nav>
+      <!-- end mobile navigation -->
     </header>
     <main>
       <!-- hero section -->
       <section class="hero"></section>
       <!-- end hero section -->
       <!-- about section -->
-      <section class="about p-8 md:p-16 xl:flex">
+      <section class="p-8 md:p-16 xl:flex bg-slate-200" id="about">
         <div class="w-full xl:w-1/2 px-4 mb-6 xl:m-auto" data-aos="fade-right">
           <h3
             class="text-3xl text-center md:text-start font-bold mb-4 text-slate-800"
@@ -175,18 +275,16 @@
             Discover the Beauty of Pesona
           </h3>
           <p class="font-regular text-slate-500 text-center md:text-start">
-            Pesona adalah kegiatan orientasi dan pengenalan lingkungan kampus
-            yang diselenggarakan secara resmi bagi mahasiswa baru UTDI. Melalui
-            tema “Literasi di Era Digital”, Teknozen dibentuk agar dapat
-            berperan menjadi inisiator dengan orientasi pada tujuan akhir, yaitu
-            mendorong perkembangan peradaban Indonesia. Nantinya, Teknozen
-            diharapkan dapat menyumbangkan kontribusinya pada kemajuan Indonesia
-            dan masyarakat dunia.
+            Pesona merupakan sebuah proses seremonial penyambutan mahasiswa baru
+            di Universitas Teknologi Digital Indonesia (UTDI).Pesona mengajarkan
+            para mahasiswa untuk beradaptasi terhadap lingkungan kampus dan
+            sekitarnya. Melalui kegiatan ini, peserta dapat menerapkan
+            nilai-nilai penting sebagai bekal dalam menghadapi perkuliahan.
           </p>
         </div>
         <div class="w-full xl:w-1/2" data-aos="fade-up">
           <img
-            src="https://images.unsplash.com/photo-1631116678644-f8e691927d93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            src="https://biaya.co/wp-content/uploads/2023/01/tugu-depan2.original.jpg"
             alt="Pesona UTDI"
             class="rounded-xl"
           />
@@ -194,40 +292,21 @@
       </section>
       <!-- end about section -->
       <!-- materi section -->
-      <section class="materi p-8 md:p-16 my-4 xl:flex">
+      <section class="p-8 md:p-16 my-4 xl:flex" id="materi">
         <div class="w-full xl:w-1/2 px-4 mb-6 xl:m-auto" data-aos="fade-up">
-          <span>Discover</span>
-          <h3 class="text-3xl font-bold text-slate-800 mb-4">
-            Explore Our Extensive <br />
-            Collection of Materials
-          </h3>
+          <h3 class="text-3xl font-bold text-slate-800 mb-4">Infopedia</h3>
           <p class="font-regular text-slate-500 mb-6">
-            Our Materi section offers a wide range of resources to enhance your
-            learning experience. From textbooks to online courses, we have
-            everything you need to succeed.
+            Infopedia adalah suatu konten informatif yang menampilkan berbagai
+            informasi mengenai UTDI dan bertujuan untuk memberikan gambaran umum
+            kepada Teknozen sebelum berdinamika dan terjun langsung di dunia
+            perkuliahan. Yuk, baca Infopedia berikut ini!
           </p>
-          <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            <div data-aos="fade-left">
-              <h4 class="text-lg font-bold text-slate-800">Textbooks</h4>
-              <p class="font-regular text-slate-500">
-                Access a vast library of textbooks covering various subjects and
-                disciplines.
-              </p>
-            </div>
-            <div data-aos="fade-left">
-              <h4 class="text-lg font-bold text-slate-800">E-Learning</h4>
-              <p class="font-regular text-slate-500">
-                Enroll in our online courses and learn at your own pace,
-                anytime, anywhere.
-              </p>
-            </div>
-          </div>
 
           <div class="mt-8">
             <a
               href="#"
               class="px-4 py-2 border border-slate-500 hover:bg-yellow-500 hover:shadow-lg"
-              >Learn More</a
+              >Baca Sekarang</a
             >
           </div>
         </div>
@@ -241,43 +320,98 @@
       </section>
       <!-- end materi section -->
       <!-- atribut section -->
-      <section class="atribut p-8 md:p-16 my-4 xl:flex">
-        <div class="w-full xl:w-1/2 px-4 mb-6 xl:m-auto">
-          <span>Inspire</span>
-          <h3 class="text-3xl font-bold text-slate-800 mb-4">
-            Discover the Unique <br />
-            Attributes Of Our Campus
+      <section class="p-8 md:p-16 xl:flex bg-slate-200" id="atribut">
+        <div class="w-full px-4 mb-6 xl:m-auto" data-aos="fade-up">
+          <h3 class="text-xl xl:text-3xl font-bold text-slate-800 mb-4">
+            Atribut & Perlengkapan
           </h3>
           <p class="font-regular text-slate-500 mb-4">
-            At our campus, we take pride in our exceptional attributes that set
-            us apart from the rest. From state-of-the-art facilities to a
-            vibrant community, we offer an unparalleled learning experience.
+            Ketentuan atribut secara lengkap dapat teknozen akses melalui
+            halaman berikut.
           </p>
-          <ul class="list-decimal px-3">
-            <li>
-              <a href="">Hari Pertama</a>
-            </li>
-            <li>
-              <a href="">Hari Kedua</a>
-            </li>
-            <li>
-              <a href="">Hari Ketiga</a>
-            </li>
-          </ul>
-        </div>
-        <div class="w-full xl:w-1/2" data-aos="fade-up">
-          <img
-            src="https://images.unsplash.com/photo-1631116678644-f8e691927d93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-            alt="Pesona UTDI"
-            class="rounded-xl"
-          />
+
+          <button
+            data-modal-target="modalFirst"
+            data-modal-toggle="modalFirst"
+            class="w-full flex bg-white p-4 shadow-xl rounded-xl mt-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-circle-fill my-auto me-4 text-green-500"
+              viewBox="0 0 16 16"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h5 class="font-semibold text-slate-800">
+              Hari Pertama (Senin, 4 September 2023) Bagi mahasiswa Reguler dan
+              Kelas Karyawan
+            </h5>
+          </button>
+
+          <button
+            data-modal-target="modalSecond"
+            data-modal-toggle="modalSecond"
+            class="w-full flex bg-white shadow-xl rounded-xl p-4 mt-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-circle-fill my-auto me-4 text-green-500"
+              viewBox="0 0 16 16"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h5 class="font-semibold text-slate-800">
+              Hari Kedua (Selasa, 5 September 2023) Bagi mahasiswa Reguler
+            </h5>
+          </button>
+
+          <button
+            data-modal-target="modalThird"
+            data-modal-toggle="modalThird"
+            class="w-full flex bg-white shadow-xl p-4 rounded-xl mt-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-circle-fill my-auto me-4 text-green-500"
+              viewBox="0 0 16 16"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h5 class="font-semibold text-slate-800">
+              Hari Ketiga (Rabu, 6 September 2023) Bagi mahasiswa Reguler
+            </h5>
+          </button>
         </div>
       </section>
       <!-- end atribut section -->
+      <!-- download section -->
+      <section
+        class="p-8 md:p-16 flex justify-between bg-slate-200"
+        id="download"
+      >
+        <h5 class="text-xl xl:text-3xl font-bold text-slate-900 ms-4 my-auto">
+          Dapatkan Buku Panduan
+        </h5>
+        <a
+          href="https://drive.google.com/file/d/1VlPRelZd3QpiFL1UBxQ0rdnR7s77ZbqZ/view" target="_blank"
+          class="font-semibold border px-4 py-2 me-4 border-slate-900 my-auto hover:bg-yellow-500 hover:text-white hover:shadow-xl"
+          >Unduh</a
+        >
+      </section>
+      <!-- end download section -->
       <!-- mars section -->
-      <section class="mars text-center py-16 bg-slate-900" data-aos="fade-up">
+      <section class="text-center py-16 bg-slate-900" id="mars">
         <h3 class="text-3xl font-bold text-white mb-8">Mars UTDI</h3>
-        <div class="flex justify-center">
+        <div class="flex justify-center" data-aos="fade-up">
           <iframe
             class="w-90 xl:w-2/3 h-80 rounded-xl"
             src="https://www.youtube.com/embed/DGFmRbPJO5I"
@@ -291,18 +425,458 @@
       <!-- end mars section -->
     </main>
 
+    <!-- first modal -->
+    <div
+      id="modalFirst"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Atribut dan Perlengkapan
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="modalFirst"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <p
+              class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+            >
+              Perlengkapan/ Pakaian Umum:
+            </p>
+            <hr />
+            <div>
+              <p
+                class="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calendar-heart-fill my-auto me-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+                  />
+                </svg>
+                Senin, 4 September 2023
+              </p>
+              <p
+                class="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill my-auto me-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                Bagi mahasiswa Reguler dan Kelas Karyawan
+              </p>
+              <!-- list -->
+              <ol
+                class="list-decimal text-base leading-relaxed text-gray-500 dark:text-gray-400 px-8"
+              >
+                <li>Pakaian Atas : Baju Lurik</li>
+                <li>
+                  Pakaian Bawah :
+                  <ol class="list-disc list-inside">
+                    <li>
+                      Laki-laki : celana panjang bahan formal (bukan jeans)
+                      warna hitam dan tidak ketat
+                    </li>
+                    <li>
+                      Perempuan : rok panjang bahan (bukan jeans/sifon) warna
+                      hitam dan tidak ketat
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Rambut :
+                  <ol class="list-disc list-inside">
+                    <li>Rapi (jika berambut panjang, harus diikat)</li>
+                    <li>
+                      Perempuan : Jika berjilbab, jilbab segi empat polos
+                      berwarna hitam
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Sepatu :
+                  <ol class="list-disc list-inside">
+                    <li>Sepatu warna bebas.</li>
+                    <li>Kaos kaki minimal setinggi mata kaki, warna bebas.</li>
+                    <li>Dilarang menggunakan sandal/flat shoes</li>
+                  </ol>
+                </li>
+                <li>Alat Tulis</li>
+                <li>Bibit tanaman cemara embun</li>
+                <li>Alat Sholat</li>
+                <li>Tempat Minum (bukan sekali pakai)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second modal -->
+    <div
+      id="modalSecond"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Atribut dan Perlengkapan
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="modalSecond"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <p
+              class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+            >
+              Perlengkapan/ Pakaian Umum:
+            </p>
+            <hr />
+            <div>
+              <p
+                class="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calendar-heart-fill my-auto me-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+                  />
+                </svg>
+                Selasa, 5 September 2023
+              </p>
+              <p
+                class="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill my-auto me-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                Bagi mahasiswa Reguler
+              </p>
+              <!-- list -->
+              <ol
+                class="list-decimal text-base leading-relaxed text-gray-500 dark:text-gray-400 px-8"
+              >
+                <li>Pakaian atas: PDL UTDI</li>
+                <li>
+                  Pakaian Bawah :
+                  <ol class="list-disc list-inside">
+                    <li>
+                      Laki-laki: celana panjang bahan formal (bukan jeans) warna
+                      hitam dan tidak ketat
+                    </li>
+                    <li>
+                      Perempuan : rok/celana panjang bahan (bukan jeans/sifon)
+                      warna hitam dan tidak ketat
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Rambut :
+                  <ol class="list-disc list-inside">
+                    <li>Rapi (jika berambut panjang, harus diikat)</li>
+                    <li>
+                      Perempuan : Jika berjilbab, jilbab segi empat polos
+                      berwarna hitam
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Wajib <span class="font-bold">mengaktifkan kamera</span> dan
+                  menggunakan background Virtual
+                  <span class="font-bold">sesuai Program Studi</span> yang dapat
+                  di unduh pada laman web pesona
+                  <a href="pesona.utdi.ac.id" class="text-blue-500 italic"
+                    >pesona.utdi.ac.id</a
+                  >
+                  <ol class="list-disc list-inside">
+                    <li>
+                      Orange = Fakultas Manajemen dan Bisnis (S1-BD, S1-MR)
+                    </li>
+                    <li>
+                      Biru = Fakultas Teknologi Informasi Jenjang Sarjana
+                      (S1-IF, S1-SI, S1-TK)
+                    </li>
+                    <li>
+                      Kuning = Fakultas Teknologi Informasi Jenjang Diploma
+                      (D3-RPLA, D3-SIA, D3-TK)
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Penamaan ID Zoom PRODI_NIM_NAMA (SI_215610064_RAHMAN PAMBEKTI)
+                  (Sistem Informasi= SI, Teknik Komputer = TKS1, Rekayasa
+                  Perangkat Lunak Aplikasi = RPLA, Teknologi Komputer= TKD3,
+                  Sistem Informasi Akuntansi = SIA, Bisnis Digital = BD,
+                  Manajemen Retail= MR)
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- third modal -->
+    <div
+      id="modalThird"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Atribut dan Perlengkapan
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="modalThird"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <p
+              class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+            >
+              Perlengkapan/ Pakaian Umum:
+            </p>
+            <hr />
+            <div>
+              <p
+                class="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calendar-heart-fill my-auto me-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+                  />
+                </svg>
+                Rabu, 6 September 2023
+              </p>
+              <p
+                class="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill my-auto me-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                Bagi mahasiswa Reguler
+              </p>
+              <!-- list -->
+              <ol
+                class="list-decimal text-base leading-relaxed text-gray-500 dark:text-gray-400 px-8"
+              >
+                <li>
+                  Pakaian atas: Kemeja warna putih polos dan Almamater UTDI
+                </li>
+                <li>
+                  Pakaian Bawah :
+                  <ol class="list-disc list-inside">
+                    <li>
+                      Laki-laki: celana panjang bahan formal (bukan jeans) warna
+                      hitam dan tidak ketat
+                    </li>
+                    <li>
+                      Perempuan : rok/celana panjang bahan (bukan jeans/sifon)
+                      warna hitam dan tidak ketat
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Rambut :
+                  <ol class="list-disc list-inside">
+                    <li>Rapi (jika berambut panjang, harus diikat)</li>
+                    <li>
+                      Perempuan : Jika berjilbab, jilbab segi empat polos
+                      berwarna hitam
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Wajib <span class="font-bold">mengaktifkan kamera</span> dan
+                  menggunakan background Virtual
+                  <span class="font-bold">sesuai Program Studi</span> yang dapat
+                  di unduh pada laman web pesona
+                  <a href="pesona.utdi.ac.id" class="text-blue-500 italic"
+                    >pesona.utdi.ac.id</a
+                  >
+                  <ol class="list-disc list-inside">
+                    <li>
+                      Orange = Fakultas Manajemen dan Bisnis (S1-BD, S1-MR)
+                    </li>
+                    <li>
+                      Biru = Fakultas Teknologi Informasi Jenjang Sarjana
+                      (S1-IF, S1-SI, S1-TK)
+                    </li>
+                    <li>
+                      Kuning = Fakultas Teknologi Informasi Jenjang Diploma
+                      (D3-RPLA, D3-SIA, D3-TK)
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Penamaan ID Zoom PRODI_NIM_NAMA (SI_215610064_RAHMAN PAMBEKTI)
+                  (Sistem Informasi= SI, Teknik Komputer = TKS1, Rekayasa
+                  Perangkat Lunak Aplikasi = RPLA, Teknologi Komputer= TKD3,
+                  Sistem Informasi Akuntansi = SIA, Bisnis Digital = BD,
+                  Manajemen Retail= MR)
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-slate-900">
       <div class="xl:flex xl:justify-between p-8 md:p-16">
-        <div data-aos="fade-up" class="mb-6 flex justify-center xl:block xl:mb-0">
+        <div
+          data-aos="fade-up"
+          class="mb-6 flex justify-center xl:block xl:mb-0"
+        >
           <img src="/images/logo-pesona.png" alt="Logo Pesona" />
         </div>
-        <div class="grid grid-cols-2 text-center xl:text-start" data-aos="fade-up">
+        <div
+          class="grid grid-cols-2 text-center xl:text-start"
+          data-aos="fade-up"
+        >
           <div>
             <ul class="text-white font-normal">
-              <li class="my-2"><a href="" class="hover:text-yellow-500">About Us</a></li>
-              <li class="my-2"><a href="" class="hover:text-yellow-500">Services</a></li>
-              <li class="my-2"><a href="" class="hover:text-yellow-500">Contact Us</a></li>
-              <li class="my-2"><a href="" class="hover:text-yellow-500">Blog</a></li>
+              <li class="my-2">
+                <a href="" class="hover:text-yellow-500">About Us</a>
+              </li>
+              <li class="my-2">
+                <a href="" class="hover:text-yellow-500">Services</a>
+              </li>
+              <li class="my-2">
+                <a href="" class="hover:text-yellow-500">Contact Us</a>
+              </li>
+              <li class="my-2">
+                <a href="" class="hover:text-yellow-500">Blog</a>
+              </li>
               <li><a href="">Faq</a></li>
             </ul>
           </div>
@@ -324,6 +898,7 @@
       </div>
     </footer>
 
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
